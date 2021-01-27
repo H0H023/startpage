@@ -81,9 +81,15 @@
     </div>
     <script type="text/javascript">
 
-if (!("autofocus" in document.createElement("input"))) {
+    if (!("autofocus" in document.createElement("input"))) {
     document.getElementById("content").focus(); }
     
+      $(document).ready(function() {
+      setTimeout(function() {
+          $("#input-field").focus();
+      }, 1500);
+      });
+      
     $(function () {
       $('[data-toggle="popover"]').popover()
     })
